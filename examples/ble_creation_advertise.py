@@ -5,10 +5,10 @@
 """This example broadcasts out the creation id based on the CircuitPython machine
    string."""
 
-import adafruit_ble_creation
-import adafruit_ble
 import time
 import os
+import adafruit_ble
+import adafruit_ble_creation
 
 cid = adafruit_ble_creation.creation_ids[os.uname().machine]
 

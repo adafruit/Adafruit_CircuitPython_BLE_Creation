@@ -12,9 +12,7 @@ ble = adafruit_ble.BLERadio()
 
 print("scanning")
 # By providing Advertisement as well we include everything, not just specific advertisements.
-for advert in ble.start_scan(
-    adafruit_ble_creation.Creation, interval=0.1
-):
+for advert in ble.start_scan(adafruit_ble_creation.Creation, interval=0.1):
     creation_name = None
     for c in adafruit_ble_creation.creation_ids:
         cid = adafruit_ble_creation.creation_ids[c]

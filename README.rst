@@ -34,10 +34,7 @@ Please ensure all dependencies are available on the CircuitPython filesystem.
 This is easily achieved by downloading
 `the Adafruit library and driver bundle <https://circuitpython.org/libraries>`_
 or individual libraries can be installed using
-`circup <https://github.com/adafruit/circup>`_.
-
-.. todo:: Describe the Adafruit product this library works with. For PCBs, you can also add the
-image fromn the assets folder in the PCB's gihub repo.
+`circup <https://github.com/adafruit/circup>`_
 
 `Purchase one from the Adafruit shop <http://www.adafruit.com/products/>`_
 
@@ -47,7 +44,6 @@ Installing from PyPI
 .. note:: This library is not available on PyPI yet. Install documentation is included
    as a standard element. Stay tuned for PyPI availability!
 
-.. todo:: Remove the above note if PyPI version is/will be available at time of release.
 
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
 PyPI <https://pypi.org/project/adafruit-circuitpython-ble_creation/>`_.
@@ -77,8 +73,7 @@ To install in a virtual environment in your current project:
 Usage Example
 =============
 
-.. todo:: Add a quick, simple example. It and other examples should live in the
-examples folder and be included in docs/examples.rst.
+See examples in the directory.
 
 Contributing
 ============

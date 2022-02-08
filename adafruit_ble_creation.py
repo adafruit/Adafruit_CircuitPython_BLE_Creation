@@ -30,13 +30,12 @@ from adafruit_ble.advertising.standard import (
     ManufacturerData,
     ManufacturerDataField,
 )
+from adafruit_ble.advertising.adafruit import MANUFACTURING_DATA_ADT, ADAFRUIT_COMPANY_ID
 from micropython import const
 
 __version__ = "0.0.0-auto.0"
 __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_BLE_Creation.git"
 
-_MANUFACTURING_DATA_ADT = const(0xFF)
-_ADAFRUIT_COMPANY_ID = const(0x0822)
 # Color packets are 1 (and radio), broadcastnet is 3.
 _DEVICE_FRIEND_DATA_ID = const(0x0004)
 
@@ -49,8 +48,8 @@ class Creation(Advertisement):
     match_prefixes = (
         struct.pack(
             "<BHBH",
-            _MANUFACTURING_DATA_ADT,
-            _ADAFRUIT_COMPANY_ID,
+            MANUFACTURING_DATA_ADT,
+            ADAFRUIT_COMPANY_ID,
             struct.calcsize("<HII"),
             _DEVICE_FRIEND_DATA_ID,
         ),
@@ -58,8 +57,8 @@ class Creation(Advertisement):
     manufacturer_data = LazyObjectField(
         ManufacturerData,
         "manufacturer_data",
-        advertising_data_type=_MANUFACTURING_DATA_ADT,
-        company_id=_ADAFRUIT_COMPANY_ID,
+        advertising_data_type=MANUFACTURING_DATA_ADT,
+        company_id=ADAFRUIT_COMPANY_ID,
         key_encoding="<H",
     )
     creation_id = ManufacturerDataField(

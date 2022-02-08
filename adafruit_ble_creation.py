@@ -30,7 +30,10 @@ from adafruit_ble.advertising.standard import (
     ManufacturerData,
     ManufacturerDataField,
 )
-from adafruit_ble.advertising.adafruit import MANUFACTURING_DATA_ADT, ADAFRUIT_COMPANY_ID
+from adafruit_ble.advertising.adafruit import (
+    MANUFACTURING_DATA_ADT,
+    ADAFRUIT_COMPANY_ID,
+)
 from micropython import const
 
 __version__ = "0.0.0-auto.0"

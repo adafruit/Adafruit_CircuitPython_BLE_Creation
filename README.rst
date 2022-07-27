@@ -3,7 +3,7 @@ Introduction
 
 
 .. image:: https://readthedocs.org/projects/adafruit-circuitpython-ble_creation/badge/?version=latest
-    :target: https://docs.circuitpython.org/projects/ble_creation/en/latest/
+    :target: https://docs.circuitpython.org/projects/ble-creation/en/latest/
     :alt: Documentation Status
 
 

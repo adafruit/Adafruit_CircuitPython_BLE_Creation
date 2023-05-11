@@ -42,6 +42,7 @@ __repo__ = "https://github.com/adafruit/Adafruit_CircuitPython_BLE_Creation.git"
 # Color packets are 1 (and radio), broadcastnet is 3.
 _DEVICE_FRIEND_DATA_ID = const(0x0004)
 
+
 # pylint: disable=too-few-public-methods
 class Creation(Advertisement):
     """Advertise what services that the device makes available upon connection."""
